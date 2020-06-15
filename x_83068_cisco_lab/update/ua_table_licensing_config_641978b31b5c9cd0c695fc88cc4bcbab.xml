@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="INSERT_OR_UPDATE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_83068_cisco_lab_git_configuration</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-27 13:11:52</sys_created_on>
+        <sys_id>641978b31b5c9cd0c695fc88cc4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_83068_cisco_lab_git_configuration</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>ua_table_licensing_config_641978b31b5c9cd0c695fc88cc4bcbab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-27 13:11:52</sys_updated_on>
+    </ua_table_licensing_config>
+</record_update>

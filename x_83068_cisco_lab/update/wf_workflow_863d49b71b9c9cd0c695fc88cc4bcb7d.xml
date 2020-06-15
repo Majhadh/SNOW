@@ -1,0 +1,2036 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["b2bfa78a1b4d5810c695fc88cc4bcb17"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description/>
+        <expected_sequences>babfa78a1b4d5810c695fc88cc4bcb34,b2bfa78a1b4d5810c695fc88cc4bcb1a,3abfa78a1b4d5810c695fc88cc4bcb20,36bfa78a1b4d5810c695fc88cc4bcb1f,7ebfa78a1b4d5810c695fc88cc4bcb35,b6bfa78a1b4d5810c695fc88cc4bcb18,babfa78a1b4d5810c695fc88cc4bcb1c,febfa78a1b4d5810c695fc88cc4bcb30,36bfa78a1b4d5810c695fc88cc4bcb1b,bebfa78a1b4d5810c695fc88cc4bcb1d,b2bfa78a1b4d5810c695fc88cc4bcb17</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>babfa78a1b4d5810c695fc88cc4bcb34,b2bfa78a1b4d5810c695fc88cc4bcb1a,3abfa78a1b4d5810c695fc88cc4bcb20,36bfa78a1b4d5810c695fc88cc4bcb1f,7ebfa78a1b4d5810c695fc88cc4bcb35,b2bfa78a1b4d5810c695fc88cc4bcb17,b6bfa78a1b4d5810c695fc88cc4bcb18,babfa78a1b4d5810c695fc88cc4bcb1c,febfa78a1b4d5810c695fc88cc4bcb30,36bfa78a1b4d5810c695fc88cc4bcb1b,bebfa78a1b4d5810c695fc88cc4bcb1d</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Git Create Branch Subflow</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">babfa78a1b4d5810c695fc88cc4bcb34</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b2bfef4a1b4d5810c695fc88cc4bcb79</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:51:01</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Git Create Branch Subflow">863d49b71b9c9cd0c695fc88cc4bcb7d</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Git Create Branch Subflow</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-27 14:39:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>863d49b71b9c9cd0c695fc88cc4bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Git Create Branch Subflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>wf_workflow_863d49b71b9c9cd0c695fc88cc4bcb7d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-27 14:39:53</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>fabfa78a1b4d5810c695fc88cc4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Delivery</name>
+        <ola>1970-01-03 00:00:00</ola>
+        <order>140</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>f2bfa78a1b4d5810c695fc88cc4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>delivery</value>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Fulfillment</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>120</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>76bfa78a1b4d5810c695fc88cc4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>fulfillment</value>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>7abfa78a1b4d5810c695fc88cc4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>90</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>f6bfa78a1b4d5810c695fc88cc4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>request_approved</value>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Waiting for Approval</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>72bfa78a1b4d5810c695fc88cc4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>waiting_for_approval</value>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Aggregate Inputs</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b2bfa78a1b4d5810c695fc88cc4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+        <x>72</x>
+        <y>125</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b2bfa78a1b4d5810c695fc88cc4bcb1a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2bfa78a1b4d5810c695fc88cc4bcb1a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>36bfa78a1b4d5810c695fc88cc4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>var branchName = current.variables.branch_name;&#13;
+var sysId = current.request.opened_by;&#13;
+&#13;
+var userGR = new GlideRecord('sys_user');&#13;
+userGR.addQuery("sys_id", sysId);&#13;
+userGR.query();&#13;
+while (userGR.next()) {&#13;
+    var snowUserSysId = userGR.getValue('user_name');&#13;
+}&#13;
+&#13;
+// Get user group&#13;
+var userGroup = new x_83068_cisco_lab.GitUtil();&#13;
+var userGroupResponse = userGroup._getUserGroupWkflow(snowUserSysId);&#13;
+&#13;
+workflow.scratchpad.branch_name = branchName;&#13;
+workflow.scratchpad.repository = userGroupResponse;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2bfa78a1b4d5810c695fc88cc4bcb1a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>36bfa78a1b4d5810c695fc88cc4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>var branchName = current.variables.branch_name;&#13;
+var sysId = current.request.opened_by;&#13;
+&#13;
+var userGR = new GlideRecord('sys_user');&#13;
+userGR.addQuery("sys_id", sysId);&#13;
+userGR.query();&#13;
+while (userGR.next()) {&#13;
+    var snowUserSysId = userGR.getValue('user_name');&#13;
+}&#13;
+&#13;
+// Get user group&#13;
+var userGroup = new x_83068_cisco_lab.GitUtil();&#13;
+var userGroupResponse = userGroup._getUserGroupWkflow(snowUserSysId);&#13;
+&#13;
+workflow.scratchpad.branch_name = branchName;&#13;
+workflow.scratchpad.repository = userGroupResponse;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Aggregate Inputs">b2bfa78a1b4d5810c695fc88cc4bcb1a</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>7ebfa78a1b4d5810c695fc88cc4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>babfa78a1b4d5810c695fc88cc4bcb34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=babfa78a1b4d5810c695fc88cc4bcb34"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">babfa78a1b4d5810c695fc88cc4bcb34</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b6bfa78a1b4d5810c695fc88cc4bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Branch Created</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>7ebfa78a1b4d5810c695fc88cc4bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+        <x>919</x>
+        <y>36</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=7ebfa78a1b4d5810c695fc88cc4bcb35"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7ebfa78a1b4d5810c695fc88cc4bcb35</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>febfa78a1b4d5810c695fc88cc4bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>work_notes=The branch '${workflow.scratchpad.branch_name}' has been created in GitLab.^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7ebfa78a1b4d5810c695fc88cc4bcb35</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>febfa78a1b4d5810c695fc88cc4bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>work_notes=The branch '${workflow.scratchpad.branch_name}' has been created in GitLab.^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Branch Created">7ebfa78a1b4d5810c695fc88cc4bcb35</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3abfa78a1b4d5810c695fc88cc4bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create Branch</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>36bfa78a1b4d5810c695fc88cc4bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+        <x>623</x>
+        <y>43</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=36bfa78a1b4d5810c695fc88cc4bcb1f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>36bfa78a1b4d5810c695fc88cc4bcb1f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b6bfa78a1b4d5810c695fc88cc4bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>var branchName = workflow.scratchpad.branch_name;&#13;
+var repository = workflow.scratchpad.repository;&#13;
+&#13;
+var Branch = new x_83068_cisco_lab.GitLabManager();&#13;
+var CreateBranchResponse = Branch._createBranch(branchName, repository);&#13;
+&#13;
+workflow.scratchpad.branch = CreateBranchResponse;&#13;
+&#13;
+if(CreateBranchResponse.commit.id == ""){&#13;
+	activity.result="faulted";	&#13;
+   }</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>36bfa78a1b4d5810c695fc88cc4bcb1f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b6bfa78a1b4d5810c695fc88cc4bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>var branchName = workflow.scratchpad.branch_name;&#13;
+var repository = workflow.scratchpad.repository;&#13;
+&#13;
+var Branch = new x_83068_cisco_lab.GitLabManager();&#13;
+var CreateBranchResponse = Branch._createBranch(branchName, repository);&#13;
+&#13;
+workflow.scratchpad.branch = CreateBranchResponse;&#13;
+&#13;
+if(CreateBranchResponse.commit.id == ""){&#13;
+	activity.result="faulted";	&#13;
+   }</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Branch">36bfa78a1b4d5810c695fc88cc4bcb1f</activity>
+        <condition>activity.state == 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>true</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Error</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>febfa78a1b4d5810c695fc88cc4bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Branch">36bfa78a1b4d5810c695fc88cc4bcb1f</activity>
+        <condition>true &amp;&amp; activity.state != 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>72bfa78a1b4d5810c695fc88cc4bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create File in GitLab</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>babfa78a1b4d5810c695fc88cc4bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+        <x>415</x>
+        <y>234</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=babfa78a1b4d5810c695fc88cc4bcb1c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>babfa78a1b4d5810c695fc88cc4bcb1c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3ebfa78a1b4d5810c695fc88cc4bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>var requestNumber = current.request.number;&#13;
+var RITM = current.number;&#13;
+var userSysId = current.request.opened_by.sys_id;&#13;
+var branchName = workflow.scratchpad.branch_name;&#13;
+var gitDeploymGRSysId = workflow.scratchpad.git_config_item_sys_id;&#13;
+&#13;
+var branchFile = new x_83068_cisco_lab.GitLabManager();&#13;
+var createFileResponse = branchFile._createFile(requestNumber, RITM, userSysId, branchName, gitDeploymGRSysId);&#13;
+&#13;
+if(createFileResponse.file_path == ""){&#13;
+	activity.result="faulted";	&#13;
+   }</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>babfa78a1b4d5810c695fc88cc4bcb1c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3ebfa78a1b4d5810c695fc88cc4bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>var requestNumber = current.request.number;&#13;
+var RITM = current.number;&#13;
+var userSysId = current.request.opened_by.sys_id;&#13;
+var branchName = workflow.scratchpad.branch_name;&#13;
+var gitDeploymGRSysId = workflow.scratchpad.git_config_item_sys_id;&#13;
+&#13;
+var branchFile = new x_83068_cisco_lab.GitLabManager();&#13;
+var createFileResponse = branchFile._createFile(requestNumber, RITM, userSysId, branchName, gitDeploymGRSysId);&#13;
+&#13;
+if(createFileResponse.file_path == ""){&#13;
+	activity.result="faulted";	&#13;
+   }</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create File in GitLab">babfa78a1b4d5810c695fc88cc4bcb1c</activity>
+        <condition>activity.state == 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>true</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Error</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>76bfa78a1b4d5810c695fc88cc4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create File in GitLab">babfa78a1b4d5810c695fc88cc4bcb1c</activity>
+        <condition>true &amp;&amp; activity.state != 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>f6bfa78a1b4d5810c695fc88cc4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create GR</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b6bfa78a1b4d5810c695fc88cc4bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+        <x>35</x>
+        <y>251</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b6bfa78a1b4d5810c695fc88cc4bcb18"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b6bfa78a1b4d5810c695fc88cc4bcb18</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>babfa78a1b4d5810c695fc88cc4bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>var requestNumber = current.request.number;&#13;
+var ritm = current.number;&#13;
+var sys_id = current.request.opened_by.sys_id;&#13;
+var title = current.variables.title;&#13;
+var email = current.variables.email_address;&#13;
+var branchName = current.variables.branch_name;&#13;
+var requester = current.request.opened_by.sys_id;&#13;
+&#13;
+var createGitGR = new x_83068_cisco_lab.GitUtil();&#13;
+var CIGR = createGitGR._createGitCI(requestNumber, ritm, sys_id, title, email, branchName, requester);&#13;
+&#13;
+if(CIGR == ""){&#13;
+	activity.result="faulted";	&#13;
+   }&#13;
+&#13;
+workflow.scratchpad.git_config_item_sys_id = CIGR;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b6bfa78a1b4d5810c695fc88cc4bcb18</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>babfa78a1b4d5810c695fc88cc4bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>var requestNumber = current.request.number;&#13;
+var ritm = current.number;&#13;
+var sys_id = current.request.opened_by.sys_id;&#13;
+var title = current.variables.title;&#13;
+var email = current.variables.email_address;&#13;
+var branchName = current.variables.branch_name;&#13;
+var requester = current.request.opened_by.sys_id;&#13;
+&#13;
+var createGitGR = new x_83068_cisco_lab.GitUtil();&#13;
+var CIGR = createGitGR._createGitCI(requestNumber, ritm, sys_id, title, email, branchName, requester);&#13;
+&#13;
+if(CIGR == ""){&#13;
+	activity.result="faulted";	&#13;
+   }&#13;
+&#13;
+workflow.scratchpad.git_config_item_sys_id = CIGR;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create GR">b6bfa78a1b4d5810c695fc88cc4bcb18</activity>
+        <condition>activity.state == 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>true</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Error</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>7abfa78a1b4d5810c695fc88cc4bcb19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create GR">b6bfa78a1b4d5810c695fc88cc4bcb18</activity>
+        <condition>true &amp;&amp; activity.state != 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>fabfa78a1b4d5810c695fc88cc4bcb19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b2bfa78a1b4d5810c695fc88cc4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+        <x>675</x>
+        <y>539</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b2bfa78a1b4d5810c695fc88cc4bcb17"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Return Value">9b2dba250a0a0b6400396e341ba9d9a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>GR Sys ID</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>bebfa78a1b4d5810c695fc88cc4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+        <x>311</x>
+        <y>408</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=bebfa78a1b4d5810c695fc88cc4bcb1d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bebfa78a1b4d5810c695fc88cc4bcb1d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b2bfa78a1b4d5810c695fc88cc4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>${workflow.scratchpad.git_config_item_sys_id}</value>
+        <variable display_value="">9b2e2cdf0a0a0b6400b2257f77a7db13</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bebfa78a1b4d5810c695fc88cc4bcb1d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b2bfa78a1b4d5810c695fc88cc4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>${workflow.scratchpad.git_config_item_sys_id}</value>
+        <variable display_value="">9b2e2cdf0a0a0b6400b2257f77a7db13</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="GR Sys ID">bebfa78a1b4d5810c695fc88cc4bcb1d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>7ebfa78a1b4d5810c695fc88cc4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Wait</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>febfa78a1b4d5810c695fc88cc4bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+        <x>898</x>
+        <y>233</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=febfa78a1b4d5810c695fc88cc4bcb30"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>32bfa78a1b4d5810c695fc88cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>1970-01-01 00:00:10</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>36bfa78a1b4d5810c695fc88cc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3abfa78a1b4d5810c695fc88cc4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3ebfa78a1b4d5810c695fc88cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>72bfa78a1b4d5810c695fc88cc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>76bfa78a1b4d5810c695fc88cc4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>7abfa78a1b4d5810c695fc88cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>7ebfa78a1b4d5810c695fc88cc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b2bfa78a1b4d5810c695fc88cc4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b6bfa78a1b4d5810c695fc88cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>babfa78a1b4d5810c695fc88cc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>f2bfa78a1b4d5810c695fc88cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>f6bfa78a1b4d5810c695fc88cc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>fabfa78a1b4d5810c695fc88cc4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>febfa78a1b4d5810c695fc88cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3abfa78a1b4d5810c695fc88cc4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>72bfa78a1b4d5810c695fc88cc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>babfa78a1b4d5810c695fc88cc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>36bfa78a1b4d5810c695fc88cc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>32bfa78a1b4d5810c695fc88cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>1970-01-01 00:00:10</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>f2bfa78a1b4d5810c695fc88cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b6bfa78a1b4d5810c695fc88cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b2bfa78a1b4d5810c695fc88cc4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>febfa78a1b4d5810c695fc88cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>f6bfa78a1b4d5810c695fc88cc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>fabfa78a1b4d5810c695fc88cc4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>7abfa78a1b4d5810c695fc88cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>76bfa78a1b4d5810c695fc88cc4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3ebfa78a1b4d5810c695fc88cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>febfa78a1b4d5810c695fc88cc4bcb30</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>7ebfa78a1b4d5810c695fc88cc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait">febfa78a1b4d5810c695fc88cc4bcb30</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>36bfa78a1b4d5810c695fc88cc4bcb34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Wait</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3abfa78a1b4d5810c695fc88cc4bcb20</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:54</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+        <x>342</x>
+        <y>123</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=3abfa78a1b4d5810c695fc88cc4bcb20"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>36bfa78a1b4d5810c695fc88cc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3abfa78a1b4d5810c695fc88cc4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3abfa78a1b4d5810c695fc88cc4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3ebfa78a1b4d5810c695fc88cc4bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>72bfa78a1b4d5810c695fc88cc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>76bfa78a1b4d5810c695fc88cc4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>7ebfa78a1b4d5810c695fc88cc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b2bfa78a1b4d5810c695fc88cc4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>babfa78a1b4d5810c695fc88cc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>bebfa78a1b4d5810c695fc88cc4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>bebfa78a1b4d5810c695fc88cc4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>f6bfa78a1b4d5810c695fc88cc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>fabfa78a1b4d5810c695fc88cc4bcb21</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:54</sys_updated_on>
+        <value>1970-01-01 00:00:05</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>fabfa78a1b4d5810c695fc88cc4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>febfa78a1b4d5810c695fc88cc4bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>babfa78a1b4d5810c695fc88cc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3ebfa78a1b4d5810c695fc88cc4bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>76bfa78a1b4d5810c695fc88cc4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>febfa78a1b4d5810c695fc88cc4bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>fabfa78a1b4d5810c695fc88cc4bcb21</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:54</sys_updated_on>
+        <value>1970-01-01 00:00:05</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3abfa78a1b4d5810c695fc88cc4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>bebfa78a1b4d5810c695fc88cc4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>36bfa78a1b4d5810c695fc88cc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>72bfa78a1b4d5810c695fc88cc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>7ebfa78a1b4d5810c695fc88cc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b2bfa78a1b4d5810c695fc88cc4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>bebfa78a1b4d5810c695fc88cc4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>f6bfa78a1b4d5810c695fc88cc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>fabfa78a1b4d5810c695fc88cc4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3abfa78a1b4d5810c695fc88cc4bcb20</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3abfa78a1b4d5810c695fc88cc4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait">3abfa78a1b4d5810c695fc88cc4bcb20</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3abfa78a1b4d5810c695fc88cc4bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Worknote</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>36bfa78a1b4d5810c695fc88cc4bcb1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+        <x>37</x>
+        <y>412</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=36bfa78a1b4d5810c695fc88cc4bcb1b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>36bfa78a1b4d5810c695fc88cc4bcb1b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3abfa78a1b4d5810c695fc88cc4bcb1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>work_notes=A new file has been created in GitLab to trigger a Jenkins deployment.^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>36bfa78a1b4d5810c695fc88cc4bcb1b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3abfa78a1b4d5810c695fc88cc4bcb1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <value>work_notes=A new file has been created in GitLab to trigger a Jenkins deployment.^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Worknote">36bfa78a1b4d5810c695fc88cc4bcb1b</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>f2bfa78a1b4d5810c695fc88cc4bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">7ebfa78a1b4d5810c695fc88cc4bcb1a</condition>
+        <from display_value="Aggregate Inputs">b2bfa78a1b4d5810c695fc88cc4bcb1a</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>32bfa78a1b4d5810c695fc88cc4bcb3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="Wait">3abfa78a1b4d5810c695fc88cc4bcb20</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Error">7abfa78a1b4d5810c695fc88cc4bcb19</condition>
+        <from display_value="Create GR">b6bfa78a1b4d5810c695fc88cc4bcb18</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>36bfa78a1b4d5810c695fc88cc4bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="End">b2bfa78a1b4d5810c695fc88cc4bcb17</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">3abfa78a1b4d5810c695fc88cc4bcb30</condition>
+        <from display_value="Wait">3abfa78a1b4d5810c695fc88cc4bcb20</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>36bfa78a1b4d5810c695fc88cc4bcb3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="Create Branch">36bfa78a1b4d5810c695fc88cc4bcb1f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">72bfa78a1b4d5810c695fc88cc4bcb20</condition>
+        <from display_value="Create Branch">36bfa78a1b4d5810c695fc88cc4bcb1f</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>3ebfa78a1b4d5810c695fc88cc4bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="Branch Created">7ebfa78a1b4d5810c695fc88cc4bcb35</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Error">76bfa78a1b4d5810c695fc88cc4bcb1d</condition>
+        <from display_value="Create File in GitLab">babfa78a1b4d5810c695fc88cc4bcb1c</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>7abfa78a1b4d5810c695fc88cc4bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="End">b2bfa78a1b4d5810c695fc88cc4bcb17</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">fabfa78a1b4d5810c695fc88cc4bcb19</condition>
+        <from display_value="Create GR">b6bfa78a1b4d5810c695fc88cc4bcb18</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>b6bfa78a1b4d5810c695fc88cc4bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="Create File in GitLab">babfa78a1b4d5810c695fc88cc4bcb1c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Error">febfa78a1b4d5810c695fc88cc4bcb1f</condition>
+        <from display_value="Create Branch">36bfa78a1b4d5810c695fc88cc4bcb1f</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>babfa78a1b4d5810c695fc88cc4bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="End">b2bfa78a1b4d5810c695fc88cc4bcb17</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">b6bfa78a1b4d5810c695fc88cc4bcb35</condition>
+        <from display_value="Begin">babfa78a1b4d5810c695fc88cc4bcb34</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>f2bfa78a1b4d5810c695fc88cc4bcb38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="Aggregate Inputs">b2bfa78a1b4d5810c695fc88cc4bcb1a</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">7ebfa78a1b4d5810c695fc88cc4bcb1e</condition>
+        <from display_value="GR Sys ID">bebfa78a1b4d5810c695fc88cc4bcb1d</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>f6bfa78a1b4d5810c695fc88cc4bcb38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="End">b2bfa78a1b4d5810c695fc88cc4bcb17</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">f6bfa78a1b4d5810c695fc88cc4bcb1d</condition>
+        <from display_value="Create File in GitLab">babfa78a1b4d5810c695fc88cc4bcb1c</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>fabfa78a1b4d5810c695fc88cc4bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="Wait">febfa78a1b4d5810c695fc88cc4bcb30</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f2bfa78a1b4d5810c695fc88cc4bcb1c</condition>
+        <from display_value="Worknote">36bfa78a1b4d5810c695fc88cc4bcb1b</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>fabfa78a1b4d5810c695fc88cc4bcb38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="GR Sys ID">bebfa78a1b4d5810c695fc88cc4bcb1d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">36bfa78a1b4d5810c695fc88cc4bcb34</condition>
+        <from display_value="Wait">febfa78a1b4d5810c695fc88cc4bcb30</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>febfa78a1b4d5810c695fc88cc4bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="Worknote">36bfa78a1b4d5810c695fc88cc4bcb1b</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">3abfa78a1b4d5810c695fc88cc4bcb36</condition>
+        <from display_value="Branch Created">7ebfa78a1b4d5810c695fc88cc4bcb35</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>febfa78a1b4d5810c695fc88cc4bcb38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <to display_value="Create GR">b6bfa78a1b4d5810c695fc88cc4bcb18</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-29 22:47:38</sys_created_on>
+        <sys_id>76bfef4a1b4d5810c695fc88cc4bcb79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 22:47:38</sys_updated_on>
+        <workflow_version display_value="Git Create Branch Subflow">b2bfef4a1b4d5810c695fc88cc4bcb79</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=863d49b71b9c9cd0c695fc88cc4bcb7d^sys_id!=b2bfef4a1b4d5810c695fc88cc4bcb79">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

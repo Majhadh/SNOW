@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="e219b0b31b5c9cd0c695fc88cc4bcb69" sys_domain="global" table="x_83068_cisco_lab_git_configuration" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-27 13:14:10</sys_created_on>
+            <sys_id>969934f31b5c9cd0c695fc88cc4bcb9b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_83068_cisco_lab_git_configuration" sys_domain="global" view="Default view">e219b0b31b5c9cd0c695fc88cc4bcb69</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-27 13:14:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>author_name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-27 13:14:10</sys_created_on>
+            <sys_id>1e9934f31b5c9cd0c695fc88cc4bcb9b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_83068_cisco_lab_git_configuration" sys_domain="global" view="Default view">e219b0b31b5c9cd0c695fc88cc4bcb69</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-27 13:14:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>git_email_address</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-27 13:14:10</sys_created_on>
+            <sys_id>929934f31b5c9cd0c695fc88cc4bcb9c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_83068_cisco_lab_git_configuration" sys_domain="global" view="Default view">e219b0b31b5c9cd0c695fc88cc4bcb69</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-27 13:14:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>url</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-27 13:14:10</sys_created_on>
+            <sys_id>1a9934f31b5c9cd0c695fc88cc4bcb9c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_83068_cisco_lab_git_configuration" sys_domain="global" view="Default view">e219b0b31b5c9cd0c695fc88cc4bcb69</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-27 13:14:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>project_id</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-27 13:14:10</sys_created_on>
+            <sys_id>9e9934f31b5c9cd0c695fc88cc4bcb9c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_83068_cisco_lab_git_configuration" sys_domain="global" view="Default view">e219b0b31b5c9cd0c695fc88cc4bcb69</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-27 13:14:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>private_token</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-27 13:14:10</sys_created_on>
+            <sys_id>169934f31b5c9cd0c695fc88cc4bcb9d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_83068_cisco_lab_git_configuration" sys_domain="global" view="Default view">e219b0b31b5c9cd0c695fc88cc4bcb69</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-27 13:14:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>file_path</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-27 13:14:10</sys_created_on>
+            <sys_id>9a9934f31b5c9cd0c695fc88cc4bcb9d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_83068_cisco_lab_git_configuration" sys_domain="global" view="Default view">e219b0b31b5c9cd0c695fc88cc4bcb69</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-27 13:14:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_83068_cisco_lab_git_configuration</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-27 13:11:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e219b0b31b5c9cd0c695fc88cc4bcb69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_83068_cisco_lab_git_configuration</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+            <sys_update_name>sys_ui_section_e219b0b31b5c9cd0c695fc88cc4bcb69</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-27 13:11:59</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

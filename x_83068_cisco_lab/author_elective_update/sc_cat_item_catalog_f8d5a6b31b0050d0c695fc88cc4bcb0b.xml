@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Git - Delete Request">e57522b31b0050d0c695fc88cc4bcb26</sc_cat_item>
+        <sc_catalog display_value="Cisco Lab of the Future">2fd26a7f1bcc10d0c695fc88cc4bcb8f</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-15 10:51:19</sys_created_on>
+        <sys_id>f8d5a6b31b0050d0c695fc88cc4bcb0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cisco Lab of the Future.Git - Delete Request</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_f8d5a6b31b0050d0c695fc88cc4bcb0b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-15 10:51:19</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</application>
+        <file_path/>
+        <instance_id>7aaadda9db1c33000b9d21c4059619cd</instance_id>
+        <instance_name>dev76104</instance_name>
+        <name>sc_cat_item_catalog_f8d5a6b31b0050d0c695fc88cc4bcb0b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Git - Delete Request">e57522b31b0050d0c695fc88cc4bcb26</sc_cat_item><sc_catalog display_value="Cisco Lab of the Future">2fd26a7f1bcc10d0c695fc88cc4bcb8f</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-15 10:51:19</sys_created_on><sys_id>f8d5a6b31b0050d0c695fc88cc4bcb0b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cisco Lab of the Future.Git - Delete Request</sys_name><sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package><sys_policy/><sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope><sys_update_name>sc_cat_item_catalog_f8d5a6b31b0050d0c695fc88cc4bcb0b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-15 10:51:19</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-1777043608</payload_hash>
+        <record_name>Cisco Lab of the Future.Git - Delete Request</record_name>
+        <reverted_from/>
+        <source>7e07f0fa1bf78c50c695fc88cc4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-15 10:51:19</sys_created_on>
+        <sys_id>b0d5a6b31b0050d0c695fc88cc4bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1717d76f28d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-15 10:51:19</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>b8d5a6b3000050d0864b91d9db7d4c0d</update_guid>
+        <update_guid_history>b8d5a6b3000050d0864b91d9db7d4c0d:-1777043608</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Cisco Lab of the Future.Git - Delete Request">b90263621b245814c695fc88cc4bcb86</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-06 14:33:20</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>bae1f1ca0dca4e80878d0b0dcff6ac10</sys_id>
+        <sys_metadata>f8d5a6b31b0050d0c695fc88cc4bcb0b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cisco Lab of the Future.Git - Delete Request</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_parent display_value="Git - Delete Request">e57522b31b0050d0c695fc88cc4bcb26</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_scope_delete display_value="">01faa15d59984e73801aeb7267dcab41</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_f8d5a6b31b0050d0c695fc88cc4bcb0b</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_f8d5a6b31b0050d0c695fc88cc4bcb0b">b0d5a6b31b0050d0c695fc88cc4bcb0e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-06 14:33:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

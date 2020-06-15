@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="var_dictionary">
+    <var_dictionary action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes/>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>u_ccs_url</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>CCS URL</label>
+        <mandatory>true</mandatory>
+        <max_length>128</max_length>
+        <model_id>6f2cae801ba01014c695fc88cc4bcbcd</model_id>
+        <model_table>wf_workflow</model_table>
+        <name>var__m_var_dictionary_6f2cae801ba01014c695fc88cc4bcbcd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>var_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-28 16:14:29</sys_created_on>
+        <sys_id>6d6c22c01ba01014c695fc88cc4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>var__m_var_dictionary_6f2cae801ba01014c695fc88cc4bcbcd</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>var_dictionary_6d6c22c01ba01014c695fc88cc4bcb51</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-28 16:14:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </var_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</application>
+        <file_path/>
+        <instance_id>7aaadda9db1c33000b9d21c4059619cd</instance_id>
+        <instance_name>dev76104</instance_name>
+        <name>var_dictionary_6d6c22c01ba01014c695fc88cc4bcb51</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="var_dictionary"&gt;&lt;var_dictionary action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_ccs_url&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;CCS URL&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;128&lt;/max_length&gt;&lt;model_id&gt;6f2cae801ba01014c695fc88cc4bcbcd&lt;/model_id&gt;&lt;model_table&gt;wf_workflow&lt;/model_table&gt;&lt;name&gt;var__m_var_dictionary_6f2cae801ba01014c695fc88cc4bcbcd&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;var_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-28 16:14:29&lt;/sys_created_on&gt;&lt;sys_id&gt;6d6c22c01ba01014c695fc88cc4bcb51&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;var__m_var_dictionary_6f2cae801ba01014c695fc88cc4bcbcd&lt;/sys_name&gt;&lt;sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab"&gt;fe07f0fa1bf78c50c695fc88cc4bcbbc&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cisco Lab of the Future"&gt;fe07f0fa1bf78c50c695fc88cc4bcbbc&lt;/sys_scope&gt;&lt;sys_update_name&gt;var_dictionary_6d6c22c01ba01014c695fc88cc4bcb51&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-28 16:14:29&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/var_dictionary&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1833254601</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>7e07f0fa1bf78c50c695fc88cc4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-28 16:14:30</sys_created_on>
+        <sys_id>a97c2ac01ba01014c695fc88cc4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171c1917ea80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-28 16:14:30</sys_updated_on>
+        <type>Variables</type>
+        <update_guid>617c2ac0baa010147aeaf65a6779f8c5</update_guid>
+        <update_guid_history>617c2ac0baa010147aeaf65a6779f8c5:-1833254601,a97c2ac082a0101466548ac7cb79ecbe:-1302820407,e57c2ac0f2a0101404ac0b420beb72b6:-1833254601</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">95cd5da61b709410c695fc88cc4bcb38</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-18 15:11:12</sys_created_on>
+        <sys_db_object display_value="" name="var_dictionary">var_dictionary</sys_db_object>
+        <sys_id>043934fd8b474ccf96209dd70e1ba741</sys_id>
+        <sys_metadata>6d6c22c01ba01014c695fc88cc4bcb51</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CCS URL</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_scope_delete display_value="">01faa15d59984e73801aeb7267dcab41</sys_scope_delete>
+        <sys_update_name>var_dictionary_6d6c22c01ba01014c695fc88cc4bcb51</sys_update_name>
+        <sys_update_version display_value="var_dictionary_6d6c22c01ba01014c695fc88cc4bcb51">a97c2ac01ba01014c695fc88cc4bcbc5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-18 15:11:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

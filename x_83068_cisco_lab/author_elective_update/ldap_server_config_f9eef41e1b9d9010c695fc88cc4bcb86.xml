@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ldap_server_config">
+    <ldap_server_config action="DELETE">
+        <active>true</active>
+        <attributes>samaccountname, givenname,  mail</attributes>
+        <authenticate>true</authenticate>
+        <connect_timeout>10</connect_timeout>
+        <dn>majhadh@metsilabs.local</dn>
+        <dn_field/>
+        <listen_interval>5</listen_interval>
+        <listener>true</listener>
+        <map/>
+        <mid_server/>
+        <name>192.168.9.5</name>
+        <paging>true</paging>
+        <password>cHYEHY+CSFrVAqCmRgwOcA==</password>
+        <rdn>DC=metsilabs,DC=local</rdn>
+        <read_timeout>30</read_timeout>
+        <server_url>ldap://192.168.9.5:389/</server_url>
+        <ssl>false</ssl>
+        <sys_class_name>ldap_server_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-11 14:49:42</sys_created_on>
+        <sys_id>f9eef41e1b9d9010c695fc88cc4bcb86</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>192.168.9.5</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>ldap_server_config_f9eef41e1b9d9010c695fc88cc4bcb86</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-11 14:50:15</sys_updated_on>
+        <system_id>app135012.ycg3.service-now.com:dev76104001</system_id>
+        <vendor>active_directory</vendor>
+    </ldap_server_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</application>
+        <file_path/>
+        <instance_id>7aaadda9db1c33000b9d21c4059619cd</instance_id>
+        <instance_name>dev76104</instance_name>
+        <name>ldap_server_config_f9eef41e1b9d9010c695fc88cc4bcb86</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ldap_server_config"><ldap_server_config action="INSERT_OR_UPDATE"><active>true</active><attributes>samaccountname, givenname,  mail</attributes><authenticate>true</authenticate><connect_timeout>10</connect_timeout><dn>majhadh@metsilabs.local</dn><dn_field/><listen_interval>5</listen_interval><listener>true</listener><map/><mid_server/><name>192.168.9.5</name><paging>true</paging><password>cHYEHY+CSFrVAqCmRgwOcA==</password><rdn>DC=metsilabs,DC=local</rdn><read_timeout>30</read_timeout><server_url>ldap://192.168.9.5:389/</server_url><ssl>false</ssl><sys_class_name>ldap_server_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-06-11 14:49:42</sys_created_on><sys_id>f9eef41e1b9d9010c695fc88cc4bcb86</sys_id><sys_mod_count>3</sys_mod_count><sys_name>192.168.9.5</sys_name><sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package><sys_policy/><sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope><sys_update_name>ldap_server_config_f9eef41e1b9d9010c695fc88cc4bcb86</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-06-11 14:50:15</sys_updated_on><system_id>app135012.ycg3.service-now.com:dev76104001</system_id><vendor>active_directory</vendor></ldap_server_config></record_update>]]></payload>
+        <payload_hash>-866286495</payload_hash>
+        <record_name>192.168.9.5</record_name>
+        <reverted_from/>
+        <source>7e07f0fa1bf78c50c695fc88cc4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-11 14:50:15</sys_created_on>
+        <sys_id>682f341e1b9d9010c695fc88cc4bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172a3dc2f800000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-11 14:50:15</sys_updated_on>
+        <type>LDAP Server</type>
+        <update_guid>202f341ea69d9010e5aa5ceb04e57cf8</update_guid>
+        <update_guid_history>202f341ea69d9010e5aa5ceb04e57cf8:-866286495,a41fb81e4e9d901049351edd6baa4b48:351370818,241fb81ec09d90106455cbf444798d47:-68335711</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="192.168.9.5">05d10d1e1b9d9010c695fc88cc4bcb38</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-11 15:02:02</sys_created_on>
+        <sys_db_object display_value="" name="ldap_server_config">ldap_server_config</sys_db_object>
+        <sys_id>aefae8aa7c5544fc82cff5bb571b3c10</sys_id>
+        <sys_metadata>f9eef41e1b9d9010c695fc88cc4bcb86</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>192.168.9.5</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_scope_delete display_value="">01faa15d59984e73801aeb7267dcab41</sys_scope_delete>
+        <sys_update_name>ldap_server_config_f9eef41e1b9d9010c695fc88cc4bcb86</sys_update_name>
+        <sys_update_version display_value="ldap_server_config_f9eef41e1b9d9010c695fc88cc4bcb86">682f341e1b9d9010c695fc88cc4bcbf8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-11 15:02:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

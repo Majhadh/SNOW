@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="webex_rooms_bearer_token" label="Webex Rooms Bearer Token" language="en" table="x_83068_cisco_lab_git_user_configuration">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>webex_rooms_bearer_token</element>
+            <help/>
+            <hint/>
+            <label>Webex Rooms Bearer Token</label>
+            <language>en</language>
+            <name>x_83068_cisco_lab_git_user_configuration</name>
+            <plural>Webex Rooms Bearer Tokens</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-27 12:57:38</sys_created_on>
+            <sys_id>d4d53cbf1b1c9cd0c695fc88cc4bcb5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Webex Rooms Bearer Token</sys_name>
+            <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+            <sys_update_name>sys_documentation_x_83068_cisco_lab_git_user_configuration_webex_rooms_bearer_token_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-27 12:57:38</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

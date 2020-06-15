@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="author_name" label="Author Name" language="en" table="x_83068_cisco_lab_git_configuration">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>author_name</element>
+            <help/>
+            <hint/>
+            <label>Author Name</label>
+            <language>en</language>
+            <name>x_83068_cisco_lab_git_configuration</name>
+            <plural>Author Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-27 13:11:52</sys_created_on>
+            <sys_id>ac1978b31b5c9cd0c695fc88cc4bcb90</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Author Name</sys_name>
+            <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+            <sys_update_name>sys_documentation_x_83068_cisco_lab_git_configuration_author_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-27 13:11:52</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

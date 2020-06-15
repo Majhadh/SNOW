@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Git Configuration" max_length="40" name="x_83068_cisco_lab_git_configuration" sizeclass="1" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Author Name" max_length="40" name="author_name" type="string"/>
+        <element label="File Path" max_length="512" name="file_path" type="string"/>
+        <element label="Git Email Address" max_length="40" name="git_email_address" type="string"/>
+        <element label="Private Token" max_length="255" name="private_token" type="password2"/>
+        <element label="Project ID" max_length="40" name="project_id" type="string"/>
+        <element label="URL" max_length="256" name="url" type="string"/>
+    </element>
+</database>

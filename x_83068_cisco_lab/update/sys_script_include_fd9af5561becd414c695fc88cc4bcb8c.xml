@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_83068_cisco_lab.GitLabManager</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GitLabManager</name>
+        <script><![CDATA[var GitLabManager = Class.create();
+GitLabManager.prototype = {
+    initialize: function() {},
+
+    _createBranch: function(branchName, repository) {
+        // GitLab URL:https://docs.gitlab.com/ee/api/branches.html
+        // API: Create repository branch
+        try {
+            var method = "POST";
+            var masterBranch = repository;
+
+            // Search git configuration table
+            var gitConfigGR = new GlideRecord('x_83068_cisco_lab_git_configuration');
+            gitConfigGR.addQuery("active", true);
+            gitConfigGR.query();
+
+            while (gitConfigGR.next()) {
+                var privateTokenKey = gitConfigGR.private_token.getDecryptedValue();
+                var id = gitConfigGR.getValue('project_id');
+                var url = gitConfigGR.getValue('url');
+            }
+
+            var gitUrl = url + id + "/repository/branches?branch=" + branchName + "&ref=" + masterBranch;
+
+            sm = new sn_ws.RESTMessageV2();
+            sm.setHttpMethod(method);
+            sm.setEndpoint(gitUrl);
+            sm.setRequestHeader("Content-Type", "application/json");
+            sm.setRequestHeader("Accept", "application/json");
+            sm.setRequestHeader("PRIVATE-TOKEN", privateTokenKey);
+
+            // Execute the request
+            var response = sm.execute();
+            responseError = response.haveError() ? response.getErrorMessage() : "";
+            responseBody = response.getBody();
+            status = response.getStatusCode();
+
+            var parseResponseBody = JSON.parse(responseBody);
+
+            if (status >= 200 && status <= 205) {
+                gs.info("CREATING BRANCH: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody);
+                return parseResponseBody;
+            } else {
+                gs.error("ERROR - CREATING WEBEX ROOM: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody);
+                return responseError;
+            }
+        } catch (error) {
+            gs.error("ERROR - CREATING BRANCH (catch error): " + error.message);
+            return error.message;
+        }
+    },
+
+    _createFile: function(requestNumber, RITM, userSysId, branchName, gitDeploymGRSysId) {
+        try {
+            // GitLab URL: https://docs.gitlab.com/ee/api/repository_files.html
+            // API: Create new file in repository
+
+            var branch_name = '' + branchName + ''; // issues with passing this to the payload hence single quote additions 
+
+            // Capture CCS GR SysId - Jenkins to later use this to capture CCS creds
+            var gitUserConfGR = new GlideRecord('x_83068_cisco_lab_git_user_configuration');
+            gitUserConfGR.addQuery("active", true);
+            gitUserConfGR.addQuery("snow_user", userSysId);
+            gitUserConfGR.query();
+
+            while (gitUserConfGR.next()) {
+                var ccsGRSysId = gitUserConfGR.getValue('sys_id');
+            }
+            gs.info("RITM SYS ID: " + ccsGRSysId);
+
+            // Get RITM sys_id 
+            var ritmSysGR = new GlideRecord('sc_req_item');
+            ritmSysGR.addQuery("number", RITM);
+            ritmSysGR.query();
+
+            while (ritmSysGR.next()) {
+                var ritmSysId = ritmSysGR.getValue('sys_id');
+            }
+
+            // Search u_git_configuration table for data
+            var gitConfGR = new GlideRecord('x_83068_cisco_lab_git_configuration');
+            gitConfGR.addQuery("active", true);
+            gitConfGR.query();
+
+            while (gitConfGR.next()) {
+                var privateTokenKey = gitConfGR.private_token.getDecryptedValue();
+                var id = gitConfGR.getValue('project_id');
+                var file_path = gitConfGR.getValue('file_path') + "%2F" + requestNumber;
+                var author_email = gitConfGR.getValue('git_email_address');
+                var author_name = gitConfGR.getValue('author_name');
+                var content = requestNumber + ";" + RITM + ";" + userSysId + ";" + gitDeploymGRSysId + ";" + ccsGRSysId + ";" + ritmSysId;
+                var commit_message = "New File created by SNOW Workflow - " + requestNumber;
+                var url = gitConfGR.getValue('url') + id + "/repository/files/" + file_path;
+                var method = "POST";
+                // Ext systems to make 2 API calls, 1: query the gitdeplyments table and get the customer name and 2 get the CSS creds from the custom REST API
+            }
+
+            var payload = {
+                "branch": branch_name,
+                "author_email": author_email,
+                "content": content,
+                "commit_message": commit_message
+            };
+
+            var body = global.JSON.stringify(payload);
+
+            sm = new sn_ws.RESTMessageV2();
+            sm.setHttpMethod(method);
+            sm.setEndpoint(url);
+            sm.setRequestHeader("Content-Type", "application/json");
+            sm.setRequestHeader("Accept", "application/json");
+            sm.setRequestHeader("PRIVATE-TOKEN", privateTokenKey);
+            sm.setRequestBody(body);
+
+            // Execute the request
+            var response = sm.execute();
+            responseError = response.haveError() ? response.getErrorMessage() : "";
+            responseBody = response.getBody();
+            status = response.getStatusCode();
+
+            var parseResponseBody = JSON.parse(responseBody);
+
+            if (status >= 200 && status < 205) {
+                gs.info("CREATING NEW FILE IN BRANCH: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody);
+                return parseResponseBody;
+            } else {
+                gs.error("ERROR - CREATING NEW FILE IN BRANCH: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody);
+                return responseError;
+            }
+        } catch (error) {
+            gs.error("ERROR - CREATING NEW FILE IN BRANCH (catch error): " + error.message);
+            return error.message;
+        }
+    },
+
+    _deleteBranch: function(branchName) {
+        try {
+            // GitLab URL:https://docs.gitlab.com/ee/api/branches.html
+            // API: Delete repository branch
+
+            var method = "DELETE";
+
+            var gitConfigGR = new GlideRecord('x_83068_cisco_lab_git_configuration');
+            gitConfigGR.addQuery("active", true);
+            gitConfigGR.query();
+
+            while (gitConfigGR.next()) {
+                var privateTokenKey = gitConfigGR.private_token.getDecryptedValue();
+                var id = gitConfigGR.getValue('project_id');
+                var url = gitConfigGR.getValue('url');
+            }
+
+            var gitUrl = url + id + "/repository/branches/" + branchName;
+
+            sm = new sn_ws.RESTMessageV2();
+            sm.setHttpMethod(method);
+            sm.setEndpoint(gitUrl);
+            sm.setRequestHeader("Content-Type", "application/json");
+            sm.setRequestHeader("Accept", "application/json");
+            sm.setRequestHeader("PRIVATE-TOKEN", privateTokenKey);
+
+            // Execute the request
+            var response = sm.execute();
+            responseError = response.haveError() ? response.getErrorMessage() : "";
+            responseBody = response.getBody();
+            status = response.getStatusCode();
+
+            if (status == 204) {
+                gs.info("DELETING BRANCH: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody);
+				return null;
+               
+            } else {
+                gs.error("ERROR - DELETING BRANCH: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody + "RESPONSE_ERROR: " + responseError);
+                return responseError + responseBody;
+            }
+        } catch (error) {
+            gs.error("ERROR - DELETING BRANCH (catch error): " + error.message);
+            return error.message;
+        }
+    },
+
+    type: 'GitLabManager'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-05 12:24:12</sys_created_on>
+        <sys_id>fd9af5561becd414c695fc88cc4bcb8c</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_name>GitLabManager</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>sys_script_include_fd9af5561becd414c695fc88cc4bcb8c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 14:30:00</sys_updated_on>
+    </sys_script_include>
+</record_update>

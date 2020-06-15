@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_83068_cisco_lab.1_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>1_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 16:34:38</sys_created_on>
+        <sys_id>7ee0080d1bf01010c695fc88cc4bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_83068_cisco_lab.1_user</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>sys_user_role_7ee0080d1bf01010c695fc88cc4bcb87</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 16:34:38</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</application>
+        <file_path/>
+        <instance_id>7aaadda9db1c33000b9d21c4059619cd</instance_id>
+        <instance_name>dev76104</instance_name>
+        <name>sys_user_role_7ee0080d1bf01010c695fc88cc4bcb87</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><encryption_context/><grantable>true</grantable><includes_roles/><name>x_83068_cisco_lab.1_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>1_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 16:34:38</sys_created_on><sys_id>7ee0080d1bf01010c695fc88cc4bcb87</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_83068_cisco_lab.1_user</sys_name><sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package><sys_policy/><sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope><sys_update_name>sys_user_role_7ee0080d1bf01010c695fc88cc4bcb87</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 16:34:38</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>1222493794</payload_hash>
+        <record_name>x_83068_cisco_lab.1_user</record_name>
+        <reverted_from/>
+        <source>7e07f0fa1bf78c50c695fc88cc4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 16:34:38</sys_created_on>
+        <sys_id>bee0080d1bf01010c695fc88cc4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1720ee3537e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 16:34:38</sys_updated_on>
+        <type>Role</type>
+        <update_guid>b6e0080d16f01010a868e003e31cb48b</update_guid>
+        <update_guid_history>b6e0080d16f01010a868e003e31cb48b:1222493794</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_83068_cisco_lab.1_user">dfb888851b341010c695fc88cc4bcbbf</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 17:08:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>5a101148cf824ad0af74373a20864100</sys_id>
+        <sys_metadata>7ee0080d1bf01010c695fc88cc4bcb87</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_83068_cisco_lab.1_user</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_scope_delete display_value="">01faa15d59984e73801aeb7267dcab41</sys_scope_delete>
+        <sys_update_name>sys_user_role_7ee0080d1bf01010c695fc88cc4bcb87</sys_update_name>
+        <sys_update_version display_value="sys_user_role_7ee0080d1bf01010c695fc88cc4bcb87">bee0080d1bf01010c695fc88cc4bcb8b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 17:08:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

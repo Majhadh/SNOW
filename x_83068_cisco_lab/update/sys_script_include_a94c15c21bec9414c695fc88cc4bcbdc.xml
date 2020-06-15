@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_83068_cisco_lab.GitWebexTeamsManager</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GitWebexTeamsManager</name>
+        <script><![CDATA[var GitWebexTeamsManager = Class.create();
+GitWebexTeamsManager.prototype = {
+    initialize: function() {},
+
+    _createWebexTeamsRoom: function(bearerToken, roomName, roomUserEmail) {
+        try {
+            var url = "https://api.ciscospark.com/v1/rooms";
+            var method = "POST";
+            var payload = {
+                "title": roomName
+            };
+            var body = global.JSON.stringify(payload);
+
+            sm = new sn_ws.RESTMessageV2();
+            sm.setHttpMethod(method);
+            sm.setEndpoint(url);
+            sm.setRequestHeader("Content-Type", "application/json");
+            sm.setRequestHeader("Accept", "application/json");
+            sm.setRequestHeader("Authorization", "Bearer " + bearerToken);
+            sm.setRequestBody(body);
+
+            // Execute the request
+            var response = sm.execute();
+            responseError = response.haveError() ? response.getErrorMessage() : "";
+            responseBody = response.getBody();
+            status = response.getStatusCode();
+
+            var parseResponseBody = JSON.parse(responseBody);
+            var roomId = parseResponseBody.id; //
+
+            if (status == 200 || status == 204) {
+                gs.info("CREATING WEBEX ROOM: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody);
+                return parseResponseBody;
+            } else {
+                gs.error("ERROR - CREATING WEBEX ROOM: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody);
+            }
+        } catch (error) {
+            gs.error("ERROR - CREATING WEBEX ROOM (catch error): " + error.message);
+            return responseError;
+        }
+    },
+
+    _addUser: function(bearerToken, roomId, roomUserEmail) {
+        try {
+            var url = "https://api.ciscospark.com/v1/memberships";
+            var method = "POST";
+            var payload = {
+                "roomId": roomId,
+                "personEmail": roomUserEmail,
+                "isModerator": "true"
+            };
+            var body = global.JSON.stringify(payload);
+
+            sm = new sn_ws.RESTMessageV2();
+            sm.setHttpMethod(method);
+            sm.setEndpoint(url);
+            sm.setRequestHeader("Content-Type", "application/json");
+            sm.setRequestHeader("Accept", "application/json");
+            sm.setRequestHeader("Authorization", "Bearer " + bearerToken);
+            sm.setRequestBody(body);
+
+            // Execute the request
+            var response = sm.execute();
+            responseError = response.haveError() ? response.getErrorMessage() : "";
+            responseBody = response.getBody();
+            status = response.getStatusCode();
+
+            var parseResponseBody = JSON.parse(responseBody);
+            var id = parseResponseBody.id; //
+
+            if (status == 200 || status == 204) {
+                gs.info("ADDING USER TO WEBEX ROOM: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody);
+                return parseResponseBody;
+            } else {
+                gs.error("ERROR - ADDING USER TO WEBEX ROOM: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody);
+            }
+        } catch (error) {
+            gs.error("ERROR - ADDING USER TO WEBEX ROOM (catch error): " + error.message);
+            return responseError;
+        }
+
+    },
+
+    _sendMessage: function(bearerToken, roomId, message, wkflowVariable) {
+        try {
+            if (wkflowVariable !== "") {
+                var roomMessage = message.replace("(workflow_variable)", wkflowVariable);
+            }
+
+            var url = "https://api.ciscospark.com/v1/messages";
+            var method = "POST";
+
+            var payload = {
+                "roomId": roomId,
+                "text": roomMessage
+            };
+            var body = JSON.stringify(payload);
+
+            gs.info(body);
+
+            sm = new sn_ws.RESTMessageV2();
+            sm.setHttpMethod(method);
+            sm.setEndpoint(url);
+            sm.setRequestHeader("Content-Type", "application/json");
+            sm.setRequestHeader("Accept", "application/json");
+            sm.setRequestHeader("Authorization", "Bearer " + bearerToken);
+            sm.setRequestBody(body);
+
+            // Execute the request
+            var response = sm.execute();
+            responseError = response.haveError() ? response.getErrorMessage() : "";
+            responseBody = response.getBody();
+            status = response.getStatusCode();
+
+            var parseResponseBody = JSON.parse(responseBody);
+            var id = parseResponseBody.id; //
+
+            if (status == 200 || status == 204) {
+                gs.info("SENDING MESSAGE TO WEBEX ROOM: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody);
+                return parseResponseBody;
+            } else {
+                gs.error("ERROR - SENDING MESSAGE TO WEBEX ROOM: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody);
+            }
+        } catch (error) {
+            gs.error("ERROR - SENDING MESSAGE TO WEBEX ROOM (catch error): " + error.message);
+            //return responseError;
+        }
+    },
+
+    _deleteWebexTeamsRoom: function(bearerToken, roomId) {
+        try {
+            var url = "https://api.ciscospark.com/v1/rooms/" + roomId;
+            var method = "DELETE";
+
+            sm = new sn_ws.RESTMessageV2();
+            sm.setHttpMethod(method);
+            sm.setEndpoint(url);
+            sm.setRequestHeader("Content-Type", "application/json");
+            sm.setRequestHeader("Accept", "application/json");
+            sm.setRequestHeader("Authorization", "Bearer " + bearerToken);
+
+            // Execute the request
+            var response = sm.execute();
+            responseError = response.haveError() ? response.getErrorMessage() : "";
+            responseBody = response.getBody();
+            status = response.getStatusCode();
+
+            if (status == 204) {
+                gs.info("DELETING WEBEX ROOM: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody);
+                return status;
+            } else {
+                gs.error("ERROR - DELETING WEBEX ROOM: " + "\r\n STATUS CODE: " + status + "\r\n RESPONSE: " + responseBody + "RESPONSE_ERROR: " + responseError);
+                //return responseError;
+            }
+        } catch (error) {
+            gs.error("ERROR - DELETING WEBEX ROOM (catch error): " + error.message);
+           // return responseError;
+        }
+    },
+
+    type: 'GitWebexTeamsManager'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-04 15:32:46</sys_created_on>
+        <sys_id>a94c15c21bec9414c695fc88cc4bcbdc</sys_id>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_name>GitWebexTeamsManager</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>sys_script_include_a94c15c21bec9414c695fc88cc4bcbdc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:45:14</sys_updated_on>
+    </sys_script_include>
+</record_update>

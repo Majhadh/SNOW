@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-14 13:18:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>94dd35271bccdc90c695fc88cc4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Configuration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>sys_app_application_94dd35271bccdc90c695fc88cc4bcbfb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-14 13:18:24</sys_updated_on>
+        <title>Configuration</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</application>
+        <file_path/>
+        <instance_id>7aaadda9db1c33000b9d21c4059619cd</instance_id>
+        <instance_name>dev76104</instance_name>
+        <name>sys_app_application_94dd35271bccdc90c695fc88cc4bcbfb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name/><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-14 13:18:24</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>94dd35271bccdc90c695fc88cc4bcbfb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Configuration</sys_name><sys_overrides/><sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package><sys_policy/><sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope><sys_update_name>sys_app_application_94dd35271bccdc90c695fc88cc4bcbfb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-14 13:18:24</sys_updated_on><title>Configuration</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-400916273</payload_hash>
+        <record_name>Configuration</record_name>
+        <reverted_from/>
+        <source>7e07f0fa1bf78c50c695fc88cc4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-14 13:18:24</sys_created_on>
+        <sys_id>25edf9e31bccdc90c695fc88cc4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17178d73f9f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-14 13:18:24</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>2dedf9e3d9ccdc90f5c9b721c80381b8</update_guid>
+        <update_guid_history>2dedf9e3d9ccdc90f5c9b721c80381b8:-400916273</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Configuration">bdfd31671bccdc90c695fc88cc4bcb50</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-14 13:18:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>19b23d531f8949a094008b91d024a710</sys_id>
+        <sys_metadata>94dd35271bccdc90c695fc88cc4bcbfb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Configuration</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_scope_delete display_value="">01faa15d59984e73801aeb7267dcab41</sys_scope_delete>
+        <sys_update_name>sys_app_application_94dd35271bccdc90c695fc88cc4bcbfb</sys_update_name>
+        <sys_update_version display_value="sys_app_application_94dd35271bccdc90c695fc88cc4bcbfb">25edf9e31bccdc90c695fc88cc4bcbb9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-14 13:18:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

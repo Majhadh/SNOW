@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_83068_cisco_lab.GitUtil</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Utility or helper functions.</description>
+        <name>GitUtil</name>
+        <script><![CDATA[var GitUtil = Class.create();
+GitUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getUserGroup: function() {
+        var userId = this.getParameter('sysparm_usernameVal');
+        var UserGroupGR = new GlideRecord('sys_user_grmember');
+        UserGroupGR.addQuery("user.user_name", userId);
+        UserGroupGR.query();
+        while (UserGroupGR.next()) {
+            var userGroup = UserGroupGR.group.name.getDisplayValue();
+        }
+
+        if (userGroup == "Dev/Test") {
+            return "devtest";
+        } else if (userGroup === "UAT") {
+            return "uat";
+        } else if (userGroup == "Production") {
+            return "production";
+        } else userGroup = "";
+        return "null";
+
+    },
+
+    _getUserGroupWkflow: function(userId) {
+        var UserGroupGR = new GlideRecord('sys_user_grmember');
+        UserGroupGR.addQuery("user.user_name", userId);
+        UserGroupGR.query();
+        while (UserGroupGR.next()) {
+            var userGroup = UserGroupGR.group.name.getDisplayValue();
+        }
+
+        if (userGroup == "Dev/Test") {
+            return "devtest";
+        } else if (userGroup === "UAT") {
+            return "uat";
+        } else if (userGroup == "Production") {
+            return "production";
+        } else userGroup = "";
+        return "null";
+
+    },
+
+    _createGitCI: function(requestNumber, ritm, sys_id, title, email, branchName, requester) {
+
+        var ConfigItemGR = new GlideRecord('x_83068_cisco_lab_git_deployments');
+        ConfigItemGR.initialize();
+
+        ConfigItemGR.active = "false";
+        ConfigItemGR.request_number = requestNumber;
+        ConfigItemGR.ritm = ritm;
+        ConfigItemGR.email_address = email;
+        ConfigItemGR.title = title;
+        ConfigItemGR.branch = branchName;
+        ConfigItemGR.owned_by = requester;
+        ConfigItemGR.insert();
+
+        // get new record sys id
+        ConfigItemGR.addQuery("request_number", requestNumber);
+        ConfigItemGR.query();
+
+        while (ConfigItemGR.next()) {
+            var getSysId = ConfigItemGR.getValue("sys_id");
+        }
+
+        return getSysId;
+    },
+
+    _checkJobId: function(requestNumber, gitRecordSysId) {
+
+        var gitDeploymGR = new GlideRecord('x_83068_cisco_lab_git_deployments');
+
+        gitDeploymGR.addQuery("sys_id", gitRecordSysId);
+        gitDeploymGR.addQuery("job_id", "!=", "");
+        gitDeploymGR.addQuery("request_number", requestNumber);
+        gitDeploymGR.addQuery("active", false);
+        gitDeploymGR.query();
+
+        var rowCount = gitDeploymGR.getRowCount();
+
+        while (gitDeploymGR.next()) {
+            if (rowCount === 1) {
+                var jobId = gitDeploymGR.getValue('job_id');
+            }
+            return jobId;
+        }
+    },
+
+    type: 'GitUtil'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-07 14:24:30</sys_created_on>
+        <sys_id>f71568871ba49814c695fc88cc4bcb44</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_name>GitUtil</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>sys_script_include_f71568871ba49814c695fc88cc4bcb44</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-29 21:30:54</sys_updated_on>
+    </sys_script_include>
+</record_update>

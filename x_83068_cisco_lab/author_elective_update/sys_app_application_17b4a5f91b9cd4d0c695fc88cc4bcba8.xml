@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Webex Teams Room Messages</name>
+        <order>100</order>
+        <roles>x_83068_cisco_lab.lotf_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-21 11:14:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>17b4a5f91b9cd4d0c695fc88cc4bcba8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Webex Teams Room Messages</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>sys_app_application_17b4a5f91b9cd4d0c695fc88cc4bcba8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-06 13:30:01</sys_updated_on>
+        <title>Webex Teams Room Messages</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</application>
+        <file_path/>
+        <instance_id>7aaadda9db1c33000b9d21c4059619cd</instance_id>
+        <instance_name>dev76104</instance_name>
+        <name>sys_app_application_17b4a5f91b9cd4d0c695fc88cc4bcba8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Webex Teams Room Messages</name><order>100</order><roles>x_83068_cisco_lab.lotf_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-21 11:14:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>17b4a5f91b9cd4d0c695fc88cc4bcba8</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Webex Teams Room Messages</sys_name><sys_overrides/><sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package><sys_policy/><sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope><sys_update_name>sys_app_application_17b4a5f91b9cd4d0c695fc88cc4bcba8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-06 13:30:01</sys_updated_on><title>Webex Teams Room Messages</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>1287906538</payload_hash>
+        <record_name>Webex Teams Room Messages</record_name>
+        <reverted_from/>
+        <source>7e07f0fa1bf78c50c695fc88cc4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-06 13:30:01</sys_created_on>
+        <sys_id>1283d7ee1ba05814c695fc88cc4bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171ea2dca420000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-06 13:30:01</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>d683d7eeb2a058146058dd2ef0519bdc</update_guid>
+        <update_guid_history>d683d7eeb2a058146058dd2ef0519bdc:1287906538,97b4a5f9829cd4d02055b4cf335856aa:155669881</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Webex Teams Room Messages">7d12677c1b701010c695fc88cc4bcb1f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 14:19:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>653fc87851174148bcd39eb0a6e34e10</sys_id>
+        <sys_metadata>17b4a5f91b9cd4d0c695fc88cc4bcba8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Webex Teams Room Messages</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_scope_delete display_value="">01faa15d59984e73801aeb7267dcab41</sys_scope_delete>
+        <sys_update_name>sys_app_application_17b4a5f91b9cd4d0c695fc88cc4bcba8</sys_update_name>
+        <sys_update_version display_value="sys_app_application_17b4a5f91b9cd4d0c695fc88cc4bcba8">1283d7ee1ba05814c695fc88cc4bcbdd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 14:19:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

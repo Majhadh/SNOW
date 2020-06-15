@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="DELETE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>git_trigger_request</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-15 10:06:46</sys_created_on>
+        <sys_id>d0ab96371bcc10d0c695fc88cc4bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>git_trigger_request</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>sp_page_d0ab96371bcc10d0c695fc88cc4bcb84</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-15 10:06:46</sys_updated_on>
+        <title>Git - Trigger Request</title>
+    </sp_page>
+    <sys_translated_text action="DELETE" query="documentkey=d0ab96371bcc10d0c695fc88cc4bcb84"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</application>
+        <file_path/>
+        <instance_id>7aaadda9db1c33000b9d21c4059619cd</instance_id>
+        <instance_name>dev76104</instance_name>
+        <name>sp_page_d0ab96371bcc10d0c695fc88cc4bcb84</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>git_trigger_request</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-15 10:06:46</sys_created_on><sys_id>d0ab96371bcc10d0c695fc88cc4bcb84</sys_id><sys_mod_count>0</sys_mod_count><sys_name>git_trigger_request</sys_name><sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package><sys_policy/><sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope><sys_update_name>sp_page_d0ab96371bcc10d0c695fc88cc4bcb84</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-15 10:06:46</sys_updated_on><title>Git - Trigger Request</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=d0ab96371bcc10d0c695fc88cc4bcb84"/></record_update>]]></payload>
+        <payload_hash>994045356</payload_hash>
+        <record_name>git_trigger_request</record_name>
+        <reverted_from/>
+        <source>7e07f0fa1bf78c50c695fc88cc4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-15 10:06:46</sys_created_on>
+        <sys_id>d0ab96371bcc10d0c695fc88cc4bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1717d4e29e60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-15 10:06:46</sys_updated_on>
+        <type>Page</type>
+        <update_guid>98ab963743cc10d01ae60089b5bb3686</update_guid>
+        <update_guid_history>98ab963743cc10d01ae60089b5bb3686:994045356</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="git_trigger_request">75156a731b0050d0c695fc88cc4bcbce</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-15 10:48:06</sys_created_on>
+        <sys_db_object display_value="" name="sp_page">sp_page</sys_db_object>
+        <sys_id>835d8532e4f640629de076259220c964</sys_id>
+        <sys_metadata>d0ab96371bcc10d0c695fc88cc4bcb84</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>git_trigger_request</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_scope_delete display_value="">01faa15d59984e73801aeb7267dcab41</sys_scope_delete>
+        <sys_update_name>sp_page_d0ab96371bcc10d0c695fc88cc4bcb84</sys_update_name>
+        <sys_update_version display_value="sp_page_d0ab96371bcc10d0c695fc88cc4bcb84">d0ab96371bcc10d0c695fc88cc4bcb87</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-15 10:48:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

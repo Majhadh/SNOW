@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Git Trigger Request">bdc5bd6c1ba20010c695fc88cc4bcb17</sc_cat_item>
+        <sc_category display_value="Use Case 1">58c78f601ba60010c695fc88cc4bcbcd</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-21 21:25:59</sys_created_on>
+        <sys_id>b0f783a01ba60010c695fc88cc4bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Use Case 1.Git Trigger Request</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sc_cat_item_category_b0f783a01ba60010c695fc88cc4bcb1c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-21 21:25:59</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Global">global</application>
+        <file_path/>
+        <instance_id>7aaadda9db1c33000b9d21c4059619cd</instance_id>
+        <instance_name>dev76104</instance_name>
+        <name>sc_cat_item_category_b0f783a01ba60010c695fc88cc4bcb1c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Git Trigger Request">bdc5bd6c1ba20010c695fc88cc4bcb17</sc_cat_item><sc_category display_value="Use Case 1">58c78f601ba60010c695fc88cc4bcbcd</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-21 21:25:59</sys_created_on><sys_id>b0f783a01ba60010c695fc88cc4bcb1c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Use Case 1.Git Trigger Request</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_category_b0f783a01ba60010c695fc88cc4bcb1c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-21 21:25:59</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-328663058</payload_hash>
+        <record_name>Use Case 1.Git Trigger Request</record_name>
+        <reverted_from/>
+        <source>76db9d3074e0330078509adcc48c8754</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-21 21:25:59</sys_created_on>
+        <sys_id>3cf783a01ba60010c695fc88cc4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fc9ff72b10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-21 21:25:59</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>74f783a0a6a6001086978959b8a52c1e</update_guid>
+        <update_guid_history>74f783a0a6a6001086978959b8a52c1e:-328663058</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Use Case 1.Git Trigger Request">7f569c391b760010c695fc88cc4bcb7f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-15 11:37:03</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>b6407e7f1b0050d0c695fc88cc4bcb37</sys_id>
+        <sys_metadata>b0f783a01ba60010c695fc88cc4bcb1c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_parent display_value="">aa407a7f1b0050d0c695fc88cc4bcbdd</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_scope_delete display_value="">3a08cd4d4e9544da90041791f25d2984</sys_scope_delete>
+        <sys_update_name>sys_metadata_delete_b6407e7f1b0050d0c695fc88cc4bcb37</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_b0f783a01ba60010c695fc88cc4bcb1c">3cf783a01ba60010c695fc88cc4bcb1e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-15 11:37:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

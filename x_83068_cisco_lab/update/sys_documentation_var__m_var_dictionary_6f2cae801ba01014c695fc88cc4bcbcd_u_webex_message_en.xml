@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_webex_message" label="Webex Message" language="en" table="var__m_var_dictionary_6f2cae801ba01014c695fc88cc4bcbcd">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_webex_message</element>
+            <help/>
+            <hint/>
+            <label>Webex Message</label>
+            <language>en</language>
+            <name>var__m_var_dictionary_6f2cae801ba01014c695fc88cc4bcbcd</name>
+            <plural>Webex Message</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-12 10:49:56</sys_created_on>
+            <sys_id>b36865e01b301054c695fc88cc4bcb31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Webex Message</sys_name>
+            <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+            <sys_update_name>sys_documentation_var__m_var_dictionary_6f2cae801ba01014c695fc88cc4bcbcd_u_webex_message_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-12 10:49:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

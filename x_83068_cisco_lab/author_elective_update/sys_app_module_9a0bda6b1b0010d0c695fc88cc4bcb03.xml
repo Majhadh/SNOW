@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Configuration">c531026b1bccdc90c695fc88cc4bcb35</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type/>
+        <map_page/>
+        <mobile_title>Base Configuration</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_git_cloudcenter_configuration</name>
+        <order>101</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-14 15:26:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9a0bda6b1b0010d0c695fc88cc4bcb03</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Base Configuration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>sys_app_module_9a0bda6b1b0010d0c695fc88cc4bcb03</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-14 15:39:18</sys_updated_on>
+        <timeline_page/>
+        <title>Base Configuration</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</application>
+        <file_path/>
+        <instance_id>7aaadda9db1c33000b9d21c4059619cd</instance_id>
+        <instance_name>dev76104</instance_name>
+        <name>sys_app_module_9a0bda6b1b0010d0c695fc88cc4bcb03</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Configuration">c531026b1bccdc90c695fc88cc4bcb35</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type/><map_page/><mobile_title>Base Configuration</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_git_cloudcenter_configuration</name><order>101</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-14 15:26:05</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9a0bda6b1b0010d0c695fc88cc4bcb03</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Base Configuration</sys_name><sys_overrides/><sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package><sys_policy/><sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope><sys_update_name>sys_app_module_9a0bda6b1b0010d0c695fc88cc4bcb03</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-14 15:39:18</sys_updated_on><timeline_page/><title>Base Configuration</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-109076065</payload_hash>
+        <record_name>Base Configuration</record_name>
+        <reverted_from/>
+        <source>7e07f0fa1bf78c50c695fc88cc4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-14 15:39:18</sys_created_on>
+        <sys_id>2d2e52e31b4010d0c695fc88cc4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17179583e710000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-14 15:39:18</sys_updated_on>
+        <type>Module</type>
+        <update_guid>e12e52e3024010d06f883d439658c08c</update_guid>
+        <update_guid_history>e12e52e3024010d06f883d439658c08c:-109076065,50ad12e3864010d09a7a0a0fd957b361:-1254898096,5d4ddea30d4010d0aed64db1f021c83d:512806095,621c1a638c4010d0b36e0d83070ad0fb:2007998852,5d8b5e23854010d06d58b04f230e2f08:1232212264,c42b9623ee4010d0466c4a094a7b21ac:-588334124</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Base Configuration">049e1ee31b4010d0c695fc88cc4bcb00</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-14 15:41:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>29a84c3be56248559a26167e601fbd01</sys_id>
+        <sys_metadata>9a0bda6b1b0010d0c695fc88cc4bcb03</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Base Configuration</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_scope_delete display_value="">01faa15d59984e73801aeb7267dcab41</sys_scope_delete>
+        <sys_update_name>sys_app_module_9a0bda6b1b0010d0c695fc88cc4bcb03</sys_update_name>
+        <sys_update_version display_value="sys_app_module_9a0bda6b1b0010d0c695fc88cc4bcb03">2d2e52e31b4010d0c695fc88cc4bcb8c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-14 15:41:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

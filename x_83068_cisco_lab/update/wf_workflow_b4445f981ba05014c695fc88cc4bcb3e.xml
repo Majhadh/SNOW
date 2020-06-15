@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["f6ed862d1b915010c695fc88cc4bcbb4"],"subflows":[],"stages":{},"activities":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description/>
+        <expected_sequences>aeed862d1b915010c695fc88cc4bcbae,3eed862d1b915010c695fc88cc4bcbb2,3aed862d1b915010c695fc88cc4bcbb1,7eed0a6d1b915010c695fc88cc4bcb89,baed862d1b915010c695fc88cc4bcbb3,f6ed862d1b915010c695fc88cc4bcbb4</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>aeed862d1b915010c695fc88cc4bcbae,3eed862d1b915010c695fc88cc4bcbb2,3aed862d1b915010c695fc88cc4bcbb1,7eed0a6d1b915010c695fc88cc4bcb89,72ed862d1b915010c695fc88cc4bcbb0,baed862d1b915010c695fc88cc4bcbb3,f6ed862d1b915010c695fc88cc4bcbb4</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Git Delete Webex Teams Room Subflow</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">aeed862d1b915010c695fc88cc4bcbae</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>e2ed862d1b915010c695fc88cc4bcbac</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>cisco.requester</sys_updated_by>
+        <sys_updated_on>2020-06-09 13:35:05</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Git Delete Webex Teams Room Subflow">b4445f981ba05014c695fc88cc4bcb3e</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Git Delete Webex Teams Room Subflow</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-29 13:46:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b4445f981ba05014c695fc88cc4bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Git Delete Webex Teams Room Subflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>wf_workflow_b4445f981ba05014c695fc88cc4bcb3e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-29 13:46:52</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>eeed862d1b915010c695fc88cc4bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Delivery</name>
+        <ola>1970-01-03 00:00:00</ola>
+        <order>140</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>66ed862d1b915010c695fc88cc4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>delivery</value>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Fulfillment</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>120</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>e6ed862d1b915010c695fc88cc4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>fulfillment</value>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>e2ed862d1b915010c695fc88cc4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>90</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>6eed862d1b915010c695fc88cc4bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>request_approved</value>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Waiting for Approval</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>62ed862d1b915010c695fc88cc4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>waiting_for_approval</value>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Aggregate Inputs</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>3eed862d1b915010c695fc88cc4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+        <x>171</x>
+        <y>165</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=3eed862d1b915010c695fc88cc4bcbb2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3eed862d1b915010c695fc88cc4bcbb2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>beed862d1b915010c695fc88cc4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>// Get Request Number for deletion&#13;
+var snowUserSysId = current.request.opened_by.sys_id;&#13;
+var requestNumber = current.variables.request_number;&#13;
+&#13;
+var gitDeplymGR = new GlideRecord('x_83068_cisco_lab_git_deployments');&#13;
+gitDeplymGR.addQuery("request_number", requestNumber);&#13;
+gitDeplymGR.addQuery("active", true);&#13;
+gitDeplymGR.query();&#13;
+&#13;
+while (gitDeplymGR.next()) {&#13;
+    var roomId = gitDeplymGR.getValue('webex_room_id');&#13;
+}&#13;
+&#13;
+workflow.scratchpad.roomId = roomId;&#13;
+&#13;
+// Get Bearer Token for Webex Rooms &#13;
+var UserConfigGR = new GlideRecord('x_83068_cisco_lab_git_user_configuration');&#13;
+UserConfigGR.addQuery("active", true);&#13;
+UserConfigGR.addQuery("snow_user", snowUserSysId);&#13;
+UserConfigGR.query();&#13;
+&#13;
+while (UserConfigGR.next()) {&#13;
+    var bearerToken = UserConfigGR.webex_rooms_bearer_token.getDecryptedValue();&#13;
+}&#13;
+&#13;
+workflow.scratchpad.webex_bearer_token = bearerToken;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3eed862d1b915010c695fc88cc4bcbb2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>beed862d1b915010c695fc88cc4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>// Get Request Number for deletion&#13;
+var snowUserSysId = current.request.opened_by.sys_id;&#13;
+var requestNumber = current.variables.request_number;&#13;
+&#13;
+var gitDeplymGR = new GlideRecord('x_83068_cisco_lab_git_deployments');&#13;
+gitDeplymGR.addQuery("request_number", requestNumber);&#13;
+gitDeplymGR.addQuery("active", true);&#13;
+gitDeplymGR.query();&#13;
+&#13;
+while (gitDeplymGR.next()) {&#13;
+    var roomId = gitDeplymGR.getValue('webex_room_id');&#13;
+}&#13;
+&#13;
+workflow.scratchpad.roomId = roomId;&#13;
+&#13;
+// Get Bearer Token for Webex Rooms &#13;
+var UserConfigGR = new GlideRecord('x_83068_cisco_lab_git_user_configuration');&#13;
+UserConfigGR.addQuery("active", true);&#13;
+UserConfigGR.addQuery("snow_user", snowUserSysId);&#13;
+UserConfigGR.query();&#13;
+&#13;
+while (UserConfigGR.next()) {&#13;
+    var bearerToken = UserConfigGR.webex_rooms_bearer_token.getDecryptedValue();&#13;
+}&#13;
+&#13;
+workflow.scratchpad.webex_bearer_token = bearerToken;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Aggregate Inputs">3eed862d1b915010c695fc88cc4bcbb2</activity>
+        <condition>true &amp;&amp; activity.state != 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>f2ed862d1b915010c695fc88cc4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>aeed862d1b915010c695fc88cc4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=aeed862d1b915010c695fc88cc4bcbae"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">aeed862d1b915010c695fc88cc4bcbae</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>3aed862d1b915010c695fc88cc4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Delete Webex Room</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>3aed862d1b915010c695fc88cc4bcbb1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:45:24</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+        <x>353</x>
+        <y>382</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=3aed862d1b915010c695fc88cc4bcbb1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3aed862d1b915010c695fc88cc4bcbb1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>3eed862d1b915010c695fc88cc4bcbb1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:45:24</sys_updated_on>
+        <value>var bearerToken = workflow.scratchpad.webex_bearer_token;&#13;
+var roomId = workflow.scratchpad.roomId = roomId;&#13;
+&#13;
+var deleteWebex = new x_83068_cisco_lab.GitWebexTeamsManager();&#13;
+var DeleteWebexResponse = deleteWebex._deleteWebexTeamsRoom(bearerToken, roomId);&#13;
+&#13;
+if(DeleteWebexResponse == ""){&#13;
+	activity.state = 'faulted';&#13;
+   }</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3aed862d1b915010c695fc88cc4bcbb1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>3eed862d1b915010c695fc88cc4bcbb1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:45:24</sys_updated_on>
+        <value>var bearerToken = workflow.scratchpad.webex_bearer_token;&#13;
+var roomId = workflow.scratchpad.roomId = roomId;&#13;
+&#13;
+var deleteWebex = new x_83068_cisco_lab.GitWebexTeamsManager();&#13;
+var DeleteWebexResponse = deleteWebex._deleteWebexTeamsRoom(bearerToken, roomId);&#13;
+&#13;
+if(DeleteWebexResponse == ""){&#13;
+	activity.state = 'faulted';&#13;
+   }</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Delete Webex Room">3aed862d1b915010c695fc88cc4bcbb1</activity>
+        <condition>activity.state == 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>true</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Error</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>f2ed862d1b915010c695fc88cc4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Delete Webex Room">3aed862d1b915010c695fc88cc4bcbb1</activity>
+        <condition>true &amp;&amp; activity.state != 'faulted'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>76ed862d1b915010c695fc88cc4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>f6ed862d1b915010c695fc88cc4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+        <x>705</x>
+        <y>723</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f6ed862d1b915010c695fc88cc4bcbb4"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Return Value">9b2dba250a0a0b6400396e341ba9d9a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Error (false)</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>72ed862d1b915010c695fc88cc4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+        <x>363</x>
+        <y>725</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=72ed862d1b915010c695fc88cc4bcbb0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>72ed862d1b915010c695fc88cc4bcbb0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>76ed862d1b915010c695fc88cc4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>false</value>
+        <variable display_value="">9b2e2cdf0a0a0b6400b2257f77a7db13</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>72ed862d1b915010c695fc88cc4bcbb0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>76ed862d1b915010c695fc88cc4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>false</value>
+        <variable display_value="">9b2e2cdf0a0a0b6400b2257f77a7db13</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Error (false)">72ed862d1b915010c695fc88cc4bcbb0</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>72ed862d1b915010c695fc88cc4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Return Value">9b2dba250a0a0b6400396e341ba9d9a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Success (true)</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>baed862d1b915010c695fc88cc4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+        <x>720</x>
+        <y>252</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=baed862d1b915010c695fc88cc4bcbb3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>baed862d1b915010c695fc88cc4bcbb3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>3eed862d1b915010c695fc88cc4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>true</value>
+        <variable display_value="">9b2e2cdf0a0a0b6400b2257f77a7db13</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>baed862d1b915010c695fc88cc4bcbb3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>3eed862d1b915010c695fc88cc4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>true</value>
+        <variable display_value="">9b2e2cdf0a0a0b6400b2257f77a7db13</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Success (true)">baed862d1b915010c695fc88cc4bcbb3</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>72ed862d1b915010c695fc88cc4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Worknote</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>7eed0a6d1b915010c695fc88cc4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+        <x>601</x>
+        <y>118</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=7eed0a6d1b915010c695fc88cc4bcb89"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7eed0a6d1b915010c695fc88cc4bcb89</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>72ed0a6d1b915010c695fc88cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>work_notes=Webex room deleted successfully.^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7eed0a6d1b915010c695fc88cc4bcb89</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>72ed0a6d1b915010c695fc88cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <value>work_notes=Webex room deleted successfully.^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Worknote">7eed0a6d1b915010c695fc88cc4bcb89</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>3aed0a6d1b915010c695fc88cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">3aed0a6d1b915010c695fc88cc4bcb8a</condition>
+        <from display_value="Worknote">7eed0a6d1b915010c695fc88cc4bcb89</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>32ed0a6d1b915010c695fc88cc4bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <to display_value="Success (true)">baed862d1b915010c695fc88cc4bcbb3</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">72ed862d1b915010c695fc88cc4bcbb4</condition>
+        <from display_value="Success (true)">baed862d1b915010c695fc88cc4bcbb3</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>36ed0a6d1b915010c695fc88cc4bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <to display_value="End">f6ed862d1b915010c695fc88cc4bcbb4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">3aed862d1b915010c695fc88cc4bcbaf</condition>
+        <from display_value="Begin">aeed862d1b915010c695fc88cc4bcbae</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>72ed0a6d1b915010c695fc88cc4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <to display_value="Aggregate Inputs">3eed862d1b915010c695fc88cc4bcbb2</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">72ed862d1b915010c695fc88cc4bcbb1</condition>
+        <from display_value="Error (false)">72ed862d1b915010c695fc88cc4bcbb0</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>76ed0a6d1b915010c695fc88cc4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <to display_value="End">f6ed862d1b915010c695fc88cc4bcbb4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">76ed862d1b915010c695fc88cc4bcbb2</condition>
+        <from display_value="Delete Webex Room">3aed862d1b915010c695fc88cc4bcbb1</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>7aed0a6d1b915010c695fc88cc4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <to display_value="Worknote">7eed0a6d1b915010c695fc88cc4bcb89</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f2ed862d1b915010c695fc88cc4bcbb3</condition>
+        <from display_value="Aggregate Inputs">3eed862d1b915010c695fc88cc4bcbb2</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>7eed0a6d1b915010c695fc88cc4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <to display_value="Delete Webex Room">3aed862d1b915010c695fc88cc4bcbb1</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Error">f2ed862d1b915010c695fc88cc4bcbb2</condition>
+        <from display_value="Delete Webex Room">3aed862d1b915010c695fc88cc4bcbb1</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>faed0a6d1b915010c695fc88cc4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <to display_value="Error (false)">72ed862d1b915010c695fc88cc4bcbb0</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-09 12:39:01</sys_created_on>
+        <sys_id>a6ed862d1b915010c695fc88cc4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:39:01</sys_updated_on>
+        <workflow_version display_value="Git Delete Webex Teams Room Subflow">e2ed862d1b915010c695fc88cc4bcbac</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=b4445f981ba05014c695fc88cc4bcb3e^sys_id!=e2ed862d1b915010c695fc88cc4bcbac">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_83068_cisco_lab.Test</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Test</name>
+        <script><![CDATA[var Test = Class.create();
+Test.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    _getUserGroup: function() {
+		var userId = this.getParameter('sysparm_usernameVal');
+        gs.addErrorMessage("MMM: " + userId);
+        var UserGroupGR = new GlideRecord('sys_user_grmember');
+        UserGroupGR.addQuery("user.user_name", userId);
+        UserGroupGR.query();
+        while (UserGroupGR.next()) {
+            var userGroup = UserGroupGR.group.name.getDisplayValue();
+        }
+
+        if (userGroup == "Dev/Test") {
+            return "devtest";
+        } else if (userGroup === "UAT") {
+            return "uat";
+        } else if (userGroup == "Production") {
+            return "production";
+        } else userGroup = "";
+        return "null-";
+
+    },
+
+    type: 'Test'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-17 18:06:19</sys_created_on>
+        <sys_id>1c2cfc1e1bfc1410c695fc88cc4bcb15</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_update_name>sys_script_include_1c2cfc1e1bfc1410c695fc88cc4bcb15</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-17 18:22:43</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</application>
+        <file_path/>
+        <instance_id>7aaadda9db1c33000b9d21c4059619cd</instance_id>
+        <instance_name>dev76104</instance_name>
+        <name>sys_script_include_1c2cfc1e1bfc1410c695fc88cc4bcb15</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_83068_cisco_lab.Test&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;Test&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var Test = Class.create();
+Test.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    _getUserGroup: function() {
+		var userId = this.getParameter('sysparm_usernameVal');
+        gs.addErrorMessage("MMM: " + userId);
+        var UserGroupGR = new GlideRecord('sys_user_grmember');
+        UserGroupGR.addQuery("user.user_name", userId);
+        UserGroupGR.query();
+        while (UserGroupGR.next()) {
+            var userGroup = UserGroupGR.group.name.getDisplayValue();
+        }
+
+        if (userGroup == "Dev/Test") {
+            return "devtest";
+        } else if (userGroup === "UAT") {
+            return "uat";
+        } else if (userGroup == "Production") {
+            return "production";
+        } else userGroup = "";
+        return "null-";
+
+    },
+
+    type: 'Test'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-05-17 18:06:19&lt;/sys_created_on&gt;&lt;sys_id&gt;1c2cfc1e1bfc1410c695fc88cc4bcb15&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Test&lt;/sys_name&gt;&lt;sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab"&gt;fe07f0fa1bf78c50c695fc88cc4bcbbc&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cisco Lab of the Future"&gt;fe07f0fa1bf78c50c695fc88cc4bcbbc&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_1c2cfc1e1bfc1410c695fc88cc4bcb15&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-05-17 18:22:43&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>77346412</payload_hash>
+        <record_name>Test</record_name>
+        <reverted_from/>
+        <source>7e07f0fa1bf78c50c695fc88cc4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-17 18:22:43</sys_created_on>
+        <sys_id>c50085521b305410c695fc88cc4bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17223dfb6ec0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-17 18:22:43</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>8d0085526f305410c88a860ae8e9330b</update_guid>
+        <update_guid_history>8d0085526f305410c88a860ae8e9330b:77346412,301ff89e95fc14104505035774967aec:1945670489,bd2ef0de2cfc1410dfe0c04f2f943808:-159997262,e99df45e45fc1410bb8be88106333f66:77346412,bb9c785ec7fc1410ee2f4d39fb922925:-1838064630,258cf45e5afc1410d2bf56ae2b951cc4:-366924131,fc4cf05efafc14103e2f7fb6d0e7e35b:1971453243</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-18 00:12:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>0200a13321e349ea82c5f832e5bd94e9</sys_id>
+        <sys_metadata>1c2cfc1e1bfc1410c695fc88cc4bcb15</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+        <sys_scope_delete display_value="">01faa15d59984e73801aeb7267dcab41</sys_scope_delete>
+        <sys_update_name>sys_script_include_1c2cfc1e1bfc1410c695fc88cc4bcb15</sys_update_name>
+        <sys_update_version display_value="sys_script_include_1c2cfc1e1bfc1410c695fc88cc4bcb15">c50085521b305410c695fc88cc4bcb0c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-18 00:12:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

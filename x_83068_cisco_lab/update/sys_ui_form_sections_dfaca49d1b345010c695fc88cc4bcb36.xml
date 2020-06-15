@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="dfaca49d1b345010c695fc88cc4bcb36" sys_domain="global" table="x_83068_cisco_lab_git_deployments" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-14 14:24:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>53aca49d1b345010c695fc88cc4bcb3a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_83068_cisco_lab_git_deployments" name="x_83068_cisco_lab_git_deployments" sys_domain="global" view="Default view">dfaca49d1b345010c695fc88cc4bcb36</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_83068_cisco_lab_git_deployments" sys_domain="global" view="Default view">8f6bb5a31bccdc90c695fc88cc4bcb34</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-14 14:24:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-14 14:24:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5faca49d1b345010c695fc88cc4bcb3a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_83068_cisco_lab_git_deployments" name="x_83068_cisco_lab_git_deployments" sys_domain="global" view="Default view">dfaca49d1b345010c695fc88cc4bcb36</sys_ui_form>
+            <sys_ui_section caption="Webex Teams Room" display_value="Webex Teams Room" name="x_83068_cisco_lab_git_deployments" sys_domain="global" view="Default view">93ac649d1b345010c695fc88cc4bcb6d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-14 14:24:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-14 14:24:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9baca49d1b345010c695fc88cc4bcb3e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_83068_cisco_lab_git_deployments" name="x_83068_cisco_lab_git_deployments" sys_domain="global" view="Default view">dfaca49d1b345010c695fc88cc4bcb36</sys_ui_form>
+            <sys_ui_section caption="Cisco Cloud Center" display_value="Cisco Cloud Center" name="x_83068_cisco_lab_git_deployments" sys_domain="global" view="Default view">53ac649d1b345010c695fc88cc4bcb6f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-14 14:24:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_83068_cisco_lab_git_deployments</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-14 14:24:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dfaca49d1b345010c695fc88cc4bcb36</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_83068_cisco_lab_git_deployments</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Cisco Lab of the Future" source="x_83068_cisco_lab">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Cisco Lab of the Future">fe07f0fa1bf78c50c695fc88cc4bcbbc</sys_scope>
+            <sys_update_name>sys_ui_form_sections_dfaca49d1b345010c695fc88cc4bcb36</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-14 14:24:18</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Webex Teams Room Message Updates" max_length="40" name="x_83068_cisco_lab_webex_teams_room_message" sizeclass="1" type="collection">
+        <element label="AccessLink" max_length="256" name="accesslink" type="string"/>
+        <element label="Branch Created" max_length="256" name="branch_created" type="string"/>
+        <element label="CCS Job Update" max_length="256" name="ccs_job_update" type="string"/>
+        <element label="CloudCenter Job Completed" max_length="256" name="cloudcenter_job_completed" type="string"/>
+        <element label="CloudCenter Job Id" max_length="256" name="cloudcenter_job_id" type="string"/>
+        <element label="Deployment Sent - Jenkins" max_length="256" name="deployment_sent_jenkins" type="string"/>
+        <element label="Error Message" max_length="512" name="error_message" type="string"/>
+    </element>
+</database>

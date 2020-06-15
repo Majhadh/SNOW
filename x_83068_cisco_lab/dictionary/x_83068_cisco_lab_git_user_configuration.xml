@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Git User Configuration" max_length="40" name="x_83068_cisco_lab_git_user_configuration" sizeclass="2" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="C3 Account ID" max_length="40" name="c3_account_id" type="string"/>
+        <element label="C3 API Key" max_length="255" name="c3_api_key" type="password2"/>
+        <element label="SNOW User" max_length="32" name="snow_user" reference="sys_user" type="reference"/>
+        <element label="Webex Rooms Bearer Token" max_length="255" name="webex_rooms_bearer_token" type="password2"/>
+        <index name="index">
+            <element name="snow_user"/>
+        </index>
+    </element>
+</database>
